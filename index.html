@@ -11,7 +11,6 @@
    
     <script>
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-      (function () {
         if (isMobile) {
           document.getElementById("case").textContent =
             "Mobile";
@@ -31,9 +30,9 @@
         } else {
           document.getElementById("case").textContent =
             "Desktop";
-          window.location.replace("https://app.facture.com.mx/");
+          window.location.href"https://app.facture.com.mx/";
         }
-      })();
+      
       
     </script>
   </body>
