@@ -27,3 +27,85 @@
     </script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FactureApp</title>
+</head>
+<body>
+  <div class="container">
+    <p id="case"></p>
+    <!-- Botones eliminados ya que no son necesarios para la ejecución automática -->
+  </div>
+  <script>
+    var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    
+    document.addEventListener("DOMContentLoaded", function() {
+      // Detectar el tipo de dispositivo y actualizar el texto
+      if (isMobile) {
+        document.getElementById("case").textContent = "Mobile";
+      } else {
+        document.getElementById("case").textContent = "Desktop";
+      }
+      
+      // Ejecutar automáticamente las funciones para abrir aplicaciones
+      openApp();          // Ejecutar automáticamente openApp
+      openAppComercial(); // Ejecutar automáticamente openAppComercial
+      openAppComercialAlmacen(); // Ejecutar automáticamente openAppComercialAlmacen
+    });
+
+    function openApp() {
+        if (isMobile) {
+          if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){  
+            const url = "https://www.apple.com/iphone/";
+          window.location.replace(url);
+          } else if (/Android/i.test(navigator.userAgent)) {
+          const url = "intent://factureapp123.com/#Intent;scheme=https;package=mx.com.facture.movil;S.browser_fallback_url=https://play.google.com/store/apps/details?id=mx.com.facture.movil&hl;end";
+          window.location.replace(url);
+          } else {
+            window.location.replace("https://www.google.com/search?q=gogle&rlz=1C1UEAD_esMX1055MX1055&oq=gogle&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMhQIAhAuGAoYQxjHARjRAxiABBiKBTIOCAMQABgKGEMYgAQYigUyDggEEAAYChhDGIAEGIoFMgkIBRAAGAoYgAQyCQgGEAAYChiABDIGCAcQRRg80gEHOTQ5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8");
+            window.location.replace(url);
+          }
+        } else {
+          window.location.replace("https://app.facture.com.mx/");
+        }
+      }
+      function openAppComercial() {
+        if (isMobile) {
+          if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){  
+            const url = "https://www.apple.com/iphone/";
+          window.location.replace(url);
+          } else if (/Android/i.test(navigator.userAgent)) {
+          const url = "intent://comercialmasterhostpro12345678.com/invite#Intent;scheme=https;package=com.facture.comercial.facture_app_comerical;S.browser_fallback_url=https://play.google.com/store/apps/details?id=mx.com.facture.movil&hl;end";
+          window.location.replace(url);
+          } else {
+            window.location.replace("https://www.google.com/search?q=gogle&rlz=1C1UEAD_esMX1055MX1055&oq=gogle&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMhQIAhAuGAoYQxjHARjRAxiABBiKBTIOCAMQABgKGEMYgAQYigUyDggEEAAYChhDGIAEGIoFMgkIBRAAGAoYgAQyCQgGEAAYChiABDIGCAcQRRg80gEHOTQ5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8");
+            window.location.replace(url);
+          }
+        } else {
+          window.location.replace("https://app.facture.com.mx/");
+        }
+      }
+      function openAppComercialAlmacen() {
+        if (isMobile) {
+          if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){  
+            const url = "https://www.apple.com/iphone/";
+          window.location.replace(url);
+          } else if (/Android/i.test(navigator.userAgent)) {
+          const url = "intent://comercialmasterhostpro12345678.com/invite/?code=Almacen#Intent;scheme=https;package=com.facture.comercial.facture_app_comerical;S.browser_fallback_url=https://play.google.com/store/apps/details?id=mx.com.facture.movil&hl;end";
+          window.location.replace(url);
+          } else {
+            window.location.replace("https://www.google.com/search?q=gogle&rlz=1C1UEAD_esMX1055MX1055&oq=gogle&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMhQIAhAuGAoYQxjHARjRAxiABBiKBTIOCAMQABgKGEMYgAQYigUyDggEEAAYChhDGIAEGIoFMgkIBRAAGAoYgAQyCQgGEAAYChiABDIGCAcQRRg80gEHOTQ5ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8");
+            window.location.replace(url);
+          }
+        } else {
+          window.location.replace("https://app.facture.com.mx/");
+        }
+      }
+  </script>
+</body>
+</html>
