@@ -1,10 +1,5 @@
-[
-    {
-        "relation": ["delegate_permission/common.handle_all_urls"],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "com.example.deepli",
-            "sha256_cert_fingerprints": ["FD:22:7F:0C:12:98:BB:F7:AD:20:11:83:48:75:E0:96:6A:95:C2:C6:90:4C:B9:54:F8:E3:7F:AF:7C:A1:59:79"]
-        }
-    }
-]
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.example.deepli",
+               "sha256_cert_fingerprints": ["FD:22:7F:0C:12:98:BB:F7:AD:20:11:83:48:75:E0:96:6A:95:C2:C6:90:4C:B9:54:F8:E3:7F:AF:7C:A1:59:79"] }
+}]
