@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FactureApp</title>
+    <title>Redirección Automática</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            // Confirmar con el usuario
+            if (confirm("¿Deseas abrir la aplicación?")) {
+                window.location.href ="intent://deepli.co/red#Intent;scheme=deepli;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.example.deepli;end"; // Cambiar "appname://path" por tu URL personalizada
+            }
+        }
+    </script>
 </head>
 <body>
-  <a href="intent://deepli.co/red#Intent;scheme=deepli;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.example.deepli;end">Abrir mi aplicaciónred</a>
-  <a href="intent://deepli.co/blue#Intent;scheme=deepli;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.example.deepli;end">Abrir mi aplicaciónblue</a>
-  <a href="intent://deepli.co/white#Intent;scheme=deepli;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.example.deepli;end">Abrir mi aplicaciónwhite</a>
+    <h1>Bienvenido a la página</h1>
+    <p>Preparando para abrir la aplicación...</p>
 </body>
 </html>
